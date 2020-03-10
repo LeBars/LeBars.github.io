@@ -1,0 +1,63 @@
+@media only screen and (max-width: 768px) {
+    .nav__toggle p{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+        height: auto;
+    }
+    .image{
+        width: 100%;
+        height: 50vh;
+        margin-top: 8vh;
+    }
+    .image::after{
+        display: none;
+    }
+    .info{
+        flex-direction: column;
+        width: 100%;
+    }
+    .info-tablet-mob{
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: auto;
+    }
+    header{
+        /* background: #000; */
+    }
+    .info__tabs{
+        width: 90vw;
+        height: 20vh;
+        margin: auto;
+    }
+    .info__title{
+        width: 100%;
+        margin: auto;
+        padding-top: 5vh;
+    }
+    .info__description{    
+        margin: 3vh auto;
+        width: 100%;
+    }
+    .info button{
+        margin: 0;
+    }
+    .info__soc-link{
+        display: none;
+    }
+    #footer{
+        display: block;
+        /* padding-top: 7vh; */
+    }
+    .footer> nav ul{
+        display: block;
+        text-align: center;
+    }
+    .footer> nav li{
+        margin-top: 3vh;
+    }
+    .footer> nav a{
+        font-size: 20px;
+    }
+}

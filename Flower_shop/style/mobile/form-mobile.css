@@ -1,0 +1,12 @@
+@media only screen and (max-width: 738px) {
+  .modal__img{
+    display: none;
+  }
+  .modal__form{
+    width: 100%;
+    height: 40%;
+  }
+  .modal{
+    height: 60%;
+  }
+}

@@ -1,0 +1,32 @@
+@media only screen and (max-width: 768px) {
+    .catalog__stock{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-top: 15%;
+        width: 100%;
+    }
+    .catalog__stock img{
+        width: 100%;
+    }
+    .catalog__stock_info{
+        padding-top: 5%;
+        width: 100%;
+        text-align: left;
+    }
+    .catalog__info_title{  
+        max-width: 100%;
+        font-size: 7vw;
+    }
+    .catalog__stock_info .border{
+        margin: 3% 0 8% 0;
+        display: block;
+    }
+    .catalog__info_description{
+        max-width: 100%;
+        font-size: 4vw;
+    }
+    .catalog__stock_info button{  
+        margin: 8% 0 0 0;
+    }
+}

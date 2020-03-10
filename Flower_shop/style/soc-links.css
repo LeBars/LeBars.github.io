@@ -1,0 +1,59 @@
+/* HOME */
+.home__soc-links{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+}
+.soc-link{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    display: block;
+    margin: 5px 0;
+}
+
+/* NAV */
+.nav__soc-links{
+    display: inline-block;
+    position: fixed;
+    left: 5%;
+    bottom: 5%;
+    width: 30px;
+}
+
+/* FOOTER */
+.footer__soc-links{
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+    margin: 10px auto 0 auto;
+    padding-bottom: 25px;
+}
+
+/* LINKS IMG */
+.fb{
+    background: url(../img/fb.png) center no-repeat;
+}
+.inst{
+    background: url(../img/inst.png) center no-repeat;
+}
+.wp{
+    background: url(../img/whatsapp.png) center no-repeat;
+}
+.vk{
+    background: url(../img/vk.png) center no-repeat;
+}
+.fb:hover{
+    background: url(../img/fb-hover.png) center no-repeat;
+}
+.inst:hover{
+    background: url(../img/inst-hover.png) center no-repeat;
+}
+.wp:hover{
+    background: url(../img/whatsapp-hover.png) center no-repeat;
+}
+.vk:hover{
+    background: url(../img/vk-hover.png) center no-repeat;
+}

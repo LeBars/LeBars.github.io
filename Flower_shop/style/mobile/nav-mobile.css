@@ -1,0 +1,24 @@
+@media only screen and (max-width: 768px) {
+    .nav__header{
+        margin: 13% auto 0 auto;
+        padding-bottom: 10%;
+    }
+    .nav__close{
+        top: 5%;
+        right: 5%;
+        width: 5vw;
+        height: 5vw;
+    }
+    .nav__close>span, 
+    .nav__close>span::before,
+    .nav__close>span::after{
+        height: 1px;
+    }
+    .nav__menu>li{
+        width: 50%;
+    }
+    .nav__menu a{    
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+}

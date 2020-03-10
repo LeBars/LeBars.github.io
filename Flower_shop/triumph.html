@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/soc-links.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/category_pages.css">
+    <link rel="stylesheet" href="style/wedding.css">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/animate.css">
+    <!-- MEDIA TABLET -->
+    <link rel="stylesheet" href="style/tablet/category_pages-tablet.css">
+    <link rel="stylesheet" href="style/tablet/nav-tablet.css">
+    <link rel="stylesheet" href="style/tablet/soc-links-tablet.css">
+    <link rel="stylesheet" href="style/tablet/form-tablet.css">
+    <!-- MEDIA MOBILE -->
+    <link rel="stylesheet" href="style/mobile/category_pages-mobile.css">
+    <link rel="stylesheet" href="style/mobile/nav-mobile.css">
+    <link rel="stylesheet" href="style/mobile/soc-links-mobile.css">
+    <link rel="stylesheet" href="style/mobile/form-mobile.css">
+    <title>CATALOG</title>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav__close">
+            <span></span>
+        </div>
+        <header class="nav__header">
+            <a href="index.html" class="logo">
+                <div>
+                    <img src="img/logo.png" alt="Логотип">
+                </div>
+                <p>Весна всегда</p>
+            </a>
+        </header>
+        <ul class="nav__menu">
+            <li><a href="wedding.html">свадебная
+                флористика</a></li>
+            <li><a href="triumph.html">букеты на торжества</a></li>
+            <li><a href="composition.html">композиции</a></li>
+            <li><a href="event.html">оформление
+                мероприятий</a></li>
+        </ul>
+        <div class="nav__soc-links">
+            <a href="#" class="soc-link inst"></a>
+            <a href="#" class="soc-link fb"></a>
+            <a href="#" class="soc-link wp"></a>
+            <a href="#" class="soc-link vk"></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo animated fadeInDown delay-1s">
+                <div>
+                    <img src="img/logo.png" alt="Логотип">
+                </div>
+                <p>Весна всегда</p>
+            </a>
+            <a href="#" class="nav__toggle animated fadeInDown delay-1s"> 
+                <div class="toggle">
+                    <span class="toggle_mid"></span>
+                    <span class="toggle_bot"></span>
+                </div>
+                <p>Меню</p>
+            </a>           
+        </header>
+    </div>
+    <main>
+        <section class="image"></section>
+        <section class="info">
+            <div class="info-tablet-mob">
+                <h2 class="info__title wow animated fadeInDown" data-wow-delay='.4s'>букеты на
+                    мероприятия</h2>
+                <p class="info__description wow animated fadeInDown" data-wow-delay='.2s'>У нас есть огромное разноообразие букетов на любое событие. 
+                    Вы сможете приобрести как нежный букет, так и яркий, а также мужские, круглые, вертикалье, веерообразные, 
+                    букеты-зонтики, букеты в вегетативной технике и много  других экзотических видов.</p>
+                <button class="modal__open wow animated fadeInDown">Заказать</button>
+            </div>
+            <div class="info__tabs">
+                <div class="info__tab tab-1"></div>
+                <div class="info__tab tab-2"></div>
+                <div class="info__tab tab-3"></div>
+                <div class="info__tab tab-4"></div>
+            </div>
+            <div class="info__soc-link">
+                <p>Больше фотографий в профиле</p>
+                <a href="#" class="soc-link inst"></a>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal__overlay">
+        <div class="modal">
+            <div class="modal__img"></div>
+            <div class="modal__form">
+            <div class="modal__close">
+                <span class='modal__close_btn'></span>
+            </div>
+            <form action="GET">
+                <legend>Оставьте свой номер и мы вам перезвоним!</legend>
+                <input type="text" placeholder='Имя'>
+                <input type="phone" placeholder='Телефон'>
+                <button>Отправить</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footer__border"></div>
+        <nav class="foote__nav">
+            <ul>
+                <li><a href="wedding.html">Cвадебная флористика</a></li>
+                <li><a href="triumph.html">Букеты на любые мероприятия</a></li>
+                <li><a href="wedding.html">Букеты невесты</a></li>
+                <li><a href="composition.html">Композиции</a></li>
+                <li><a href="event.html">Оформление мероприятий</a></li>
+            </ul>
+        </nav>
+        <div class="footer__soc-links">
+            <a href="#" class="soc-link inst"></a>
+            <a href="#" class="soc-link fb"></a>
+            <a href="#" class="soc-link wp"></a>
+            <a href="#" class="soc-link vk"></a>
+        </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/cat-pages.js"></script>
+    <script>
+        weddingImg();
+    </script>
+    <script src="scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@media only screen and (min-width: 738px) and (max-width: 1024px) {
+    .nav__header{
+        margin: 13% auto 0 auto;
+        padding-bottom: 10%;
+    }
+    .nav__close{
+        top: 5%;
+        right: 5%;
+        width: 20px;
+        height: 20px;
+    }
+    .nav__close>span, 
+    .nav__close>span::before,
+    .nav__close>span::after{
+        height: 1px;
+    }
+    .nav__menu>li{
+        width: 50%;
+    }
+    .nav__menu a{    
+        font-size: 45px;
+        line-height: 60px;
+    }
+}

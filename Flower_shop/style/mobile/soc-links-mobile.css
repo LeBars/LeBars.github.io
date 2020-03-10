@@ -1,0 +1,43 @@
+@media only screen and (max-width: 738px) {
+    .home__links{
+        height: auto;
+        margin-top: 20%;
+        padding-bottom: 10%;
+    }
+    .home__soc-links{
+        display: flex;
+        position: relative;
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 10px auto 0 auto;
+    }
+    .soc-link{
+        width: 15vw;
+        height: 15vw;        
+        display: block;
+        margin: 5px 0;
+    }
+    .nav__soc-links{
+        display: none;
+    }
+    .footer__soc-links{
+        margin: 2% auto 0 auto;
+        width: 100%;
+    }
+    .fb{
+        background: url(../../img/icon-media/fb.png) center no-repeat;
+        background-size: cover;
+    }
+    .inst{
+        background: url(../../img/icon-media/inst.png) center no-repeat;
+        background-size: cover;
+    }
+    .wp{
+        background: url(../../img/icon-media/wp.png) center no-repeat;
+        background-size: cover;
+    }
+    .vk{
+        background: url(../../img/icon-media/vk.png) center no-repeat;
+        background-size: cover;
+    }
+}

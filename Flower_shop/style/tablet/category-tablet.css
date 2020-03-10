@@ -1,0 +1,18 @@
+@media only screen and (min-width: 738px) and (max-width: 1024px) {
+    .catalog{
+        padding-top: 10%;
+    }
+    .catalog__bg-title{
+        display: none;
+    }
+    .catalog__title{
+        font-size: 40px;
+        line-height: 43px;
+    }
+    .border{
+        height: 2px;
+    }
+    .catalog__card{
+        width: 45%;
+    }
+}

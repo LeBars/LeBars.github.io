@@ -1,0 +1,137 @@
+/* HOME LAYOUT */
+.home{
+    background: url(../img/bg_home.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* HOME HEADER */
+.home__header{
+    display: flex;
+    position: relative;
+    padding-top: 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* LOGO */
+.logo>div{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    margin: 0 10px;
+    width: 22.68px;
+    height: 18.82px;
+}
+.logo>div::before{
+    content: "";
+    width: 45px;
+    border: 1px solid #FFFFFF;
+}
+.logo>div::after{
+    content: "";
+    width: 45px;
+    border: 1px solid #FFFFFF;
+}
+.logo p{
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    margin-top: 6.18px;
+}
+
+/* TITLE */
+.home__title{
+    display: block;
+    margin: 5% auto 0 auto;
+    width: 550px;
+    font-size: 70px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+/* LINKS */
+.btn-transparent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 199px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.home .btn-transparent{
+    margin: 3% auto 0 auto;
+}
+.btn-transparent:hover{
+    background: #FFFFFF;
+    color: #010001;
+}
+
+/* MOUSE */
+.home__links{
+    display: block;
+    position: relative;
+    height: 200px;
+    margin-top: 3%;
+}
+.home__mouse-link{
+    background: url(../img/mouse.png) center no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 56px;
+    display:block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.home__mouse-link:hover{
+    background: url(../img/mouse-hover.png) center no-repeat;
+}
+
+/* TEXT LINK */
+.home__text-link{
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    transform: rotate(90deg);
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    right: -5%;
+}
+.home__text-link::after{
+    content: '';
+    background: url(../img/arrow.png) center no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 0;
+    margin-left: 20px;
+}
+.home__text-link:hover{
+    font-size: 15.5px;
+}
+.home__arrow-link{
+    display: none;
+}
+
+/* GRADIENT */
+.gradient{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(0deg, #3B181E 20%, rgba(59, 24, 30, 0) 100%)
+}

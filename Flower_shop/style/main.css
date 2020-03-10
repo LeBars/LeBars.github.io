@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;    
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+}
+li{
+    list-style: none;
+}
+body, h1, h2, h3, p, div{
+    font-family: 'Forum';
+    color: #FFFFFF;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    font-weight: normal;
+}
+.container{
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    z-index: 1;
+}
+
+.locked{
+    overflow: hidden;
+}

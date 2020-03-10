@@ -1,0 +1,28 @@
+@media only screen and (min-width: 738px) and (max-width: 1024px) {
+    .catalog__stock{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .catalog__stock img{
+        width: 80%;
+    }
+    .catalog__stock_info{
+        padding-top: 5%;
+        width: 80%;
+        text-align: center;
+    }
+    .catalog__info_title{  
+        max-width: 100%;
+        font-size: 33px;
+    }
+    .catalog__stock_info .border{
+        margin: 3% auto 8% auto;
+    }
+    .catalog__info_description{
+        max-width: 100%;
+    }
+    .catalog__stock_info button{  
+        margin: 8% auto 0 auto;
+    }
+}
