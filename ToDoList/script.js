@@ -1,45 +1,52 @@
-let 
-	//Кнопка добавить
-	add = document.querySelector('.add'), 
-	//Блок куда добавляется
-	list = document.querySelector('.list'), 
-	// Массив
-	todo; 
+Vue.component('todo-item', {
+    props: ['todo', 'id', 'compl', 'del', 'complete'],
+    template: `
+        <li >
+            <div @click="complete(id)" class="co"><i  class="far fa-check-circle"></i></div>
+            <p :class="compl ? 'through' : ''">{{ todo.text }}</p>
+            <div @click="del(id)" class="de"><i class="fas fa-trash"></i></div>
+        </li>
+        `
+})
 
-//Если в локале есть нужный ключ
-if(localStorage.getItem('todo') != null) { 
-	//Тогда массив заполняется из локала
-	todo = JSON.parse(localStorage.getItem('todo'));
-} else {
-	//Если нет то, создается массив
-	todo = []; 
-}
-	
-//Создает функцию, которая создает нвоый элемент с текстом
-const taskMaker = text => { 
-	const newTask = document.createElement('div');
-	newTask.textContent = text;
-	list.appendChild(newTask);
-};
 
-//Функция инициализации перебора (чтобы из массива все задачи записывались в блок)
-function init() {
-	for(let i = 0; i < todo.length; i++) {
-		taskMaker(todo[i]);
-	};
-};
 
-//Функция которая добавляет задачу из инпута
-function out() {	
-	let inputValue = document.querySelector('input');
-	taskMaker(inputValue.value);
-	todo.push(inputValue.value);
-	inputValue.value = '';
-	localStorage.setItem('todo', JSON.stringify(todo));
-};
+var app = new Vue({
+    el: '#app',
+    data: {
+      todos: [],
+      newTodo: '',
+      arrLocalStorage: '',
+      today: '',
+      date: ''
+    },
+    mounted() {
+        if(localStorage.TODO) {
+            this.arrLocalStorage = localStorage.getItem('TODO')
+            this.todos = JSON.parse(this.arrLocalStorage)
+        }
+        this.today = new Date();
+        this.date = this.today.toLocaleDateString('ru-Ru', {weekday: 'long', month: 'short', day: 'numeric'});
+    },
+    
+    methods: {
+        addTodo: function() {
+            this.todos.push({id: this.todos.length, text: this.newTodo, compl: false, del: false})
+           
+            this.arrLocalStorage = localStorage.setItem('TODO', JSON.stringify(this.todos));
+           
+            this.newTodo = ''
+        },
+        del: function(i) {
+            this.todos[i].del = true
 
-//Запуск инициализации
-init();
+            this.arrLocalStorage = localStorage.setItem('TODO', JSON.stringify(this.todos));
+        },
+        complete: function(i) {
+            this.todos[i].compl = !this.todos[i].compl
 
-//Кнопка добавить
-add.addEventListener('click', out);
+            this.arrLocalStorage = localStorage.setItem('TODO', JSON.stringify(this.todos));
+        }
+    }
+  })
+
