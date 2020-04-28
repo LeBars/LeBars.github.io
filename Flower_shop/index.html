@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/home.css">    
     <link rel="stylesheet" href="style/soc-links.css">    
@@ -13,6 +15,8 @@
     <link rel="stylesheet" href="style/form.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/animate.css">
+    <link rel="stylesheet" href="style/preloader.css">
+    
     <!-- MEDIA TABLET -->
     <link rel="stylesheet" href="style/tablet/home-tablet.css">
     <link rel="stylesheet" href="style/tablet/soc-links-tablet.css">
@@ -21,6 +25,7 @@
     <link rel="stylesheet" href="style/tablet/stock-tablet.css">
     <link rel="stylesheet" href="style/tablet/footer-tablet.css">
     <link rel="stylesheet" href="style/tablet/form-tablet.css">
+    <link rel="stylesheet" href="style/tablet/slider-tab.css">
     <!-- MEDIA MOBILE -->
     <link rel="stylesheet" href="style/mobile/home-mobile.css">
     <link rel="stylesheet" href="style/mobile/soc-links-mobile.css">
@@ -29,9 +34,16 @@
     <link rel="stylesheet" href="style/mobile/stock-mobile.css">
     <link rel="stylesheet" href="style/mobile/footer-mobile.css">
     <link rel="stylesheet" href="style/mobile/form-mobile.css">
+    <link rel="stylesheet" href="style/mobile/slider-mob.css">
     <title>Buket</title>
 </head>
 <body>
+
+    <div class="preloader">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
 
     <nav class="nav">
         
@@ -92,7 +104,7 @@
                     <a href="#" class="soc-link wp animated fadeInLeft delay-1_7s"></a>
                     <a href="#" class="soc-link vk animated fadeInLeft delay-1_8s"></a>
                 </div>
-                <a href="#catalog" class="home__mouse-link animated fadeInUp"></a>
+                <a href="#catalog" class="home__mouse-link animated fadeInUp"><span></span></a>
                 <a href="#catalog" class="home__text-link ">смотреть каталог</a>
                 <a href="#catalog" class='home__arrow-link'></a>
             </div>
@@ -106,31 +118,111 @@
             <h2 class="catalog__title wow animated fadeInDown delay-2s slow">каталог услуг</h2>
             <div class="border wow animated fadeInDown delay-2s slower"></div>
             <div class="catalog__categories">
-                <div class="catalog__card catalog__card_item-1 wow animated fadeInUp delay-2s slow">
+                <div class="catalog__card catalog__card_item-1 wow animated fadeInLeft delay-2s slower">
                     <div class="catalog__card_border"></div>
                     <div class="catalog__card_number"><span>01</span></div>
                     <div class="catalog__card_title">букет невесты и свадебное оформление</div>
                     <a href="wedding.html" class="catalog__card_btn">смотреть работы</a>
                 </div>
-                <div class="catalog__card catalog__card_item-2 wow animated fadeInUp delay-2s slower">
+                <div class="catalog__card catalog__card_item-2 wow animated fadeInLeft delay-2s slow">
                     <div class="catalog__card_border"></div>
                     <div class="catalog__card_number"><span>02</span></div>
                     <div class="catalog__card_title">букеты на торжества</div>
                     <a href="triumph.html" class="catalog__card_btn">смотреть работы</a>
                 </div>
-                <div class="catalog__card catalog__card_item-3 wow animated fadeInUp delay-2s slower">
+                <div class="catalog__card catalog__card_item-3 wow animated fadeInRight delay-2s slow">
                     <div class="catalog__card_border"></div>
                     <div class="catalog__card_number"><span>03</span></div>
                     <div class="catalog__card_title">композиции</div>
                     <a href="composition.html" class="catalog__card_btn">смотреть работы</a>
                 </div>
-                <div class="catalog__card catalog__card_item-4 wow animated fadeInUp delay-2s slow">
+                <div class="catalog__card catalog__card_item-4 wow animated fadeInRight delay-2s slower">
                     <div class="catalog__card_border"></div>
                     <div class="catalog__card_number"><span>04</span></div>
                     <div class="catalog__card_title">оформление мероприятий</div>
                     <a href="event.html" class="catalog__card_btn">смотреть работы</a>
                 </div>
-            </div>  
+            </div>
+
+            <!-- SLIDER FOR TABLET -->
+            <div class="swiper-container swiper-tab">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="catalog__card catalog__card_item-1">
+                            <div class="catalog__card_border"></div>
+                            <div class="catalog__card_number"><span>01</span></div>
+                            <div class="catalog__card_title">букет невесты и свадебное оформление</div>
+                            <a href="wedding.html" class="catalog__card_btn">смотреть работы</a>
+                        </div>
+                        <div class="catalog__card catalog__card_item-2">
+                            <div class="catalog__card_border"></div>
+                            <div class="catalog__card_number"><span>02</span></div>
+                            <div class="catalog__card_title">букеты на торжества</div>
+                            <a href="triumph.html" class="catalog__card_btn">смотреть работы</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalog__card catalog__card_item-3">
+                            <div class="catalog__card_border"></div>
+                            <div class="catalog__card_number"><span>03</span></div>
+                            <div class="catalog__card_title">композиции</div>
+                            <a href="composition.html" class="catalog__card_btn">смотреть работы</a>
+                        </div>
+                        <div class="catalog__card catalog__card_item-4">
+                            <div class="catalog__card_border"></div>
+                            <div class="catalog__card_number"><span>04</span></div>
+                            <div class="catalog__card_title">оформление мероприятий</div>
+                            <a href="event.html" class="catalog__card_btn">смотреть работы</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- SLIDER FOR MOBILE -->
+            <div class="swiper-container swiper-mob">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="catalog__card catalog__card_item-1">
+                            <div class="catalog__card_border"></div>
+                            <div class="catalog__card_number"><span>01</span></div>
+                            <div class="catalog__card_title">букет невесты и свадебное оформление</div>
+                            <a href="wedding.html" class="catalog__card_btn">смотреть работы</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalog__card catalog__card_item-2">
+                            <div class="catalog__card_border"></div>
+                            <div class="catalog__card_number"><span>02</span></div>
+                            <div class="catalog__card_title">букеты на торжества</div>
+                            <a href="triumph.html" class="catalog__card_btn">смотреть работы</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalog__card catalog__card_item-3">
+                            <div class="catalog__card_border"></div>
+                            <div class="catalog__card_number"><span>03</span></div>
+                            <div class="catalog__card_title">композиции</div>
+                            <a href="composition.html" class="catalog__card_btn">смотреть работы</a>
+                        </div>
+                    </div>
+                        <div class="swiper-slide">
+                            <div class="catalog__card catalog__card_item-4">
+                                <div class="catalog__card_border"></div>
+                                <div class="catalog__card_number"><span>04</span></div>
+                                <div class="catalog__card_title">оформление мероприятий</div>
+                                <a href="event.html" class="catalog__card_btn">смотреть работы</a>
+                            </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
 
             <div class="catalog__stock">
                 <div class="catalog__stock_info">
@@ -152,11 +244,11 @@
                 <div class="modal__close">
                     <span class='modal__close_btn'></span>
                 </div>
-                <form action="GET">
+                <form action="send.php" method="POST">
                     <legend>Оставьте свой номер и мы вам перезвоним!</legend>
-                    <input type="text" placeholder='Имя'>
+                    <input type="name" placeholder='Имя'>
                     <input type="phone" placeholder='Телефон'>
-                    <button>Отправить</button>
+                    <button type="submit">Отправить</button>
                 </form>
             </div>
         </div>
@@ -182,7 +274,11 @@
         </div>
     </footer>
 
-    <script src="scripts/nav.js"></script>
+    <script src="scripts/preloader.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/nav_home.js"></script>
     <script src="scripts/category.js"></script>
     <script src="scripts/form.js"></script>
     <script src="scripts/wow.min.js"></script>

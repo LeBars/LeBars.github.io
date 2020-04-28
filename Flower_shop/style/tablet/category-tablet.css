@@ -1,4 +1,4 @@
-@media only screen and (min-width: 738px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .catalog{
         padding-top: 10%;
     }
@@ -12,7 +12,11 @@
     .border{
         height: 2px;
     }
+    .catalog__card_title{
+        height: 70%;
+    }
     .catalog__card{
         width: 45%;
+        height: 450px;
     }
 }

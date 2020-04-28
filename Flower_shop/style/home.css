@@ -1,39 +1,54 @@
 /* HOME LAYOUT */
-.home{
+.home {
     background: url(../img/bg_home.jpg) center no-repeat;
     background-size: cover;
     position: relative;
 }
 
 /* HOME HEADER */
-.home__header{
+.home__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     padding-top: 3%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
+
 /* LOGO */
-.logo>div{
+.logo>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
-.logo img{
+
+.logo img {
     margin: 0 10px;
     width: 22.68px;
     height: 18.82px;
 }
-.logo>div::before{
+
+.logo>div::before {
     content: "";
     width: 45px;
     border: 1px solid #FFFFFF;
 }
-.logo>div::after{
+
+.logo>div::after {
     content: "";
     width: 45px;
     border: 1px solid #FFFFFF;
 }
-.logo p{
+
+.logo p {
     text-transform: uppercase;
     font-size: 20px;
     line-height: 22px;
@@ -42,7 +57,7 @@
 }
 
 /* TITLE */
-.home__title{
+.home__title {
     display: block;
     margin: 5% auto 0 auto;
     width: 550px;
@@ -54,9 +69,15 @@
 }
 
 /* LINKS */
-.btn-transparent{
+.btn-transparent {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 199px;
     height: 50px;
@@ -66,72 +87,124 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
 }
-.home .btn-transparent{
+
+.home .btn-transparent {
     margin: 3% auto 0 auto;
 }
-.btn-transparent:hover{
+
+.btn-transparent:hover {
     background: #FFFFFF;
     color: #010001;
 }
 
 /* MOUSE */
-.home__links{
+.home__links {
     display: block;
     position: relative;
     height: 200px;
     margin-top: 3%;
 }
-.home__mouse-link{
+
+.home__mouse-link {
     background: url(../img/mouse.png) center no-repeat;
     background-size: cover;
     width: 36px;
     height: 56px;
-    display:block;
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-.home__mouse-link:hover{
-    background: url(../img/mouse-hover.png) center no-repeat;
+
+.home__mouse-link span {
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 1px;
+    background: #fff;
+    top: 10px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    -webkit-animation: mouse 1.5s linear infinite alternate;
+    animation: mouse 1.5s linear infinite alternate;
 }
 
 /* TEXT LINK */
-.home__text-link{
+.home__text-link {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     display: inline-block;
     position: absolute;
     top: 35%;
     right: -5%;
 }
-.home__text-link::after{
+
+.home__text-link::after {
     content: '';
     background: url(../img/arrow.png) center no-repeat;
     background-size: cover;
     display: inline-block;
     width: 10px;
     height: 18px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     position: absolute;
     bottom: 0;
     margin-left: 20px;
 }
-.home__text-link:hover{
+
+.home__text-link:hover {
     font-size: 15.5px;
 }
-.home__arrow-link{
+
+.home__arrow-link {
     display: none;
 }
 
 /* GRADIENT */
-.gradient{
+.gradient {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 75px;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #3B181E), to(rgba(59, 24, 30, 0)));
+    background: -o-linear-gradient(bottom, #3B181E 20%, rgba(59, 24, 30, 0) 100%);
     background: linear-gradient(0deg, #3B181E 20%, rgba(59, 24, 30, 0) 100%)
 }
+
+/* ANMATION */
+@-webkit-keyframes mouse {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    to {
+        -webkit-transform: translateY(7px);
+        transform: translateY(7px);
+    }
+}
+
+@keyframes mouse {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    to {
+        -webkit-transform: translateY(7px);
+        transform: translateY(7px);
+    }
+}
+

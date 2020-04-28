@@ -1,34 +1,50 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* STOCK LAYOUT */
-.catalog__stock{
+.catalog__stock {
     padding: 10% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 80%;
     margin: auto;
 }
 
 /* LEFT BLOCK */
-.catalog__stock_info{
+.catalog__stock_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
-.catalog__info_title{ 
-    max-width: 250px; 
+
+.catalog__info_title {
+    max-width: 250px;
     font-size: 30px;
     line-height: 170%;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.catalog__stock_info .border{
+
+.catalog__stock_info .border {
     margin: 0;
 }
-.catalog__info_description{
+
+.catalog__info_description {
     max-width: 400px;
     font-size: 14px;
     line-height: 170%;
 }
-.catalog__stock_info button{  
+
+.catalog__stock_info button {
     font-size: 11px;
     line-height: 12px;
     letter-spacing: 0.15em;
@@ -42,11 +58,18 @@
 }
 
 /* RIGHT BLOCK */
-.catalog__stock img{
+.catalog__stock img {
     display: block;
     width: 55%;
 }
-.catalog__stock_info button:hover{
+
+.catalog__stock_info button:hover {
     background: #FFFFFF;
     color: #010001;
+}
+
+@media only screen and (min-width: 1440px) {
+    .catalog__info_description {
+        font-size: 20px;
+    }
 }

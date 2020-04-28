@@ -1,11 +1,14 @@
 /* CATALOG LAYOUT */
-.catalog{
+.catalog {
     display: block;
     position: relative;
     background: #3B181E;
     padding-top: 5%;
+    width: 100%;
+    overflow: hidden;
 }
-.catalog__bg-title{
+
+.catalog__bg-title {
     display: block;
     position: absolute;
     width: 100%;
@@ -20,14 +23,15 @@
 }
 
 /* TITLE */
-.catalog__title{
+.catalog__title {
     font-size: 30px;
     line-height: 33px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
 }
-.border{
+
+.border {
     display: block;
     position: relative;
     width: 85.5px;
@@ -37,20 +41,27 @@
 }
 
 /* CATALOG */
-.catalog__categories{
+.catalog__categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 5%;
 }
-.catalog__card{
+
+.catalog__card {
     display: block;
     position: relative;
     width: 22%;
-    height: 350px;    
+    height: 350px;
     margin-bottom: 2%;
 }
-.catalog__card_border{
+
+.catalog__card_border {
     display: none;
     position: absolute;
     top: -2.5%;
@@ -59,25 +70,32 @@
     width: 105%;
     height: 105%;
 }
-.catalog__card_item-1{
+
+.catalog__card_item-1 {
     background: url(../img/item-1.jpg) center no-repeat;
     background-size: cover;
 }
-.catalog__card_item-2{
+
+.catalog__card_item-2 {
     background: url(../img/item-2.jpg) center no-repeat;
     background-size: cover;
 }
-.catalog__card_item-3{
+
+.catalog__card_item-3 {
     background: url(../img/item-3.jpg) center no-repeat;
     background-size: cover;
 }
-.catalog__card_item-4{
+
+.catalog__card_item-4 {
     background: url(../img/item-4.png) center no-repeat;
     background-size: cover;
 }
-.catalog__card_number{
+
+.catalog__card_number {
     display: block;
     position: relative;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
     margin-left: 8%;
     height: 10%;
@@ -85,15 +103,20 @@
     /* background: #000; */
     overflow: hidden;
 }
-.catalog__card_number span{
+
+.catalog__card_number span {
     display: block;
     position: absolute;
     bottom: -5px;
     width: 80%;
     font-size: 20px;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
-.catalog__card_number span::before, .catalog__card_number span::after{
+
+.catalog__card_number span::before,
+.catalog__card_number span::after {
     content: '';
     display: block;
     position: absolute;
@@ -103,13 +126,20 @@
     width: 100%;
     background: #fff;
 }
-.catalog__card_number span::after{
+
+.catalog__card_number span::after {
     left: 40%;
 }
-.number-active{
+
+.number-active {
+    -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
     transform: translate(100%, 0);
 }
-.catalog__card_title{
+
+.catalog__card_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     height: 88%;
@@ -119,13 +149,20 @@
     font-size: 14px;
     line-height: 170%;
     letter-spacing: 0.1em;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
 }
-.catalog__card_btn{
+
+.catalog__card_btn {
     display: none;
     position: relative;
     margin-left: 8%;
-    justify-content: center;  
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 12px;
     line-height: 13px;
@@ -133,9 +170,20 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #010001;
-    height: 10%;    
     width: 60%;
     height: 12%;
     background: #fff;
     border-radius: 1px;
+}
+.swiper-tab {
+    display: none;
+}
+.swiper-mob {
+    display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+    .catalog__bg-title {
+        font-size: 5vw;
+    }
 }

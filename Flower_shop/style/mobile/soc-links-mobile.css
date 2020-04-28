@@ -1,43 +1,71 @@
-@media only screen and (max-width: 738px) {
-    .home__links{
+@media only screen and (max-width: 767px) {
+    .home__links {
         height: auto;
         margin-top: 20%;
         padding-bottom: 10%;
     }
-    .home__soc-links{
+
+    .home__soc-links {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: relative;
         width: 100%;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
         margin: 10px auto 0 auto;
     }
-    .soc-link{
+
+    .soc-link {
         width: 15vw;
-        height: 15vw;        
+        height: 15vw;
         display: block;
         margin: 5px 0;
     }
-    .nav__soc-links{
+
+    .nav__soc-links {
         display: none;
     }
-    .footer__soc-links{
+
+    .footer__soc-links {
         margin: 2% auto 0 auto;
         width: 100%;
     }
-    .fb{
+
+    .fb {
         background: url(../../img/icon-media/fb.png) center no-repeat;
         background-size: cover;
     }
-    .inst{
+
+    .inst {
         background: url(../../img/icon-media/inst.png) center no-repeat;
         background-size: cover;
     }
-    .wp{
+
+    .wp {
         background: url(../../img/icon-media/wp.png) center no-repeat;
         background-size: cover;
     }
-    .vk{
+
+    .vk {
         background: url(../../img/icon-media/vk.png) center no-repeat;
         background-size: cover;
+    }
+
+    .fb:hover {
+        background: url(../../img/icon-media/fb.png) center no-repeat;
+    }
+
+    .inst:hover {
+        background: url(../../img/icon-media/inst.png) center no-repeat;
+    }
+
+    .wp:hover {
+        background: url(../../img/icon-media/wp.png) center no-repeat;
+    }
+
+    .vk:hover {
+        background: url(../../img/icon-media/vk.png) center no-repeat;
     }
 }

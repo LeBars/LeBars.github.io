@@ -1,40 +1,68 @@
-@media only screen and (min-width: 738px) and (max-width: 1024px) {
-    .home__links{
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .home__links {
         height: auto;
         margin-top: 20%;
         padding-bottom: 10%;
     }
-    .home__soc-links{
+
+    .home__soc-links {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: relative;
         width: 70%;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
         margin: 10px auto 0 auto;
     }
-    .soc-link{
+
+    .soc-link {
         width: 54px;
         height: 54px;
         background-size: cover;
         display: block;
         margin: 5px 0;
     }
-    .nav__soc-links{
+
+    .nav__soc-links {
         display: none;
     }
-    .footer__soc-links{
+
+    .footer__soc-links {
         margin: 2% auto 0 auto;
         width: 40%;
     }
-    .fb{
+
+    .fb {
         background: url(../../img/icon-media/fb.png) center no-repeat;
     }
-    .inst{
+
+    .inst {
         background: url(../../img/icon-media/inst.png) center no-repeat;
     }
-    .wp{
+
+    .wp {
         background: url(../../img/icon-media/wp.png) center no-repeat;
     }
-    .vk{
+
+    .vk {
+        background: url(../../img/icon-media/vk.png) center no-repeat;
+    }
+
+    .fb:hover {
+        background: url(../../img/icon-media/fb.png) center no-repeat;
+    }
+
+    .inst:hover {
+        background: url(../../img/icon-media/inst.png) center no-repeat;
+    }
+
+    .wp:hover {
+        background: url(../../img/icon-media/wp.png) center no-repeat;
+    }
+
+    .vk:hover {
         background: url(../../img/icon-media/vk.png) center no-repeat;
     }
 }

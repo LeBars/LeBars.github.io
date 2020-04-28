@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/form.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/animate.css">
+    <link rel="stylesheet" href="style/preloader.css">
     <!-- MEDIA TABLET -->
     <link rel="stylesheet" href="style/tablet/category_pages-tablet.css">
     <link rel="stylesheet" href="style/tablet/nav-tablet.css">
@@ -25,6 +26,12 @@
 </head>
 <body>
 
+    <div class="preloader">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    
     <nav class="nav">
         <div class="nav__close">
             <span></span>
@@ -81,10 +88,20 @@
                 <button class="modal__open wow animated fadeInDown">Заказать</button>
             </div>
             <div class="info__tabs">
-                <div class="info__tab tab-1"></div>
-                <div class="info__tab tab-2"></div>
-                <div class="info__tab tab-3"></div>
-                <div class="info__tab tab-4"></div>
+                <div class="info__tabs_arr-l"></div>
+                <div class="info__tabs_arr-r"></div>
+                <div class="info__tabs_wrapper">
+                    <div class="info__tabs_slider">
+                        <div class="info__tab info_tab_image tab-1"></div>
+                        <div class="info__tab info_tab_image tab-2"></div>
+                        <div class="info__tab info_tab_image tab-3"></div>
+                        <div class="info__tab info_tab_image tab-4"></div>
+                        <div class="info__tab info_tab_image tab-5"></div>
+                        <div class="info__tab info_tab_image tab-6"></div>
+                        <div class="info__tab info_tab_image tab-7"></div>
+                        <div class="info__tab info_tab_image tab-8"></div>
+                    </div>
+                </div>
             </div>
             <div class="info__soc-link">
                 <p>Больше фотографий в профиле</p>
@@ -97,15 +114,15 @@
         <div class="modal">
             <div class="modal__img"></div>
             <div class="modal__form">
-            <div class="modal__close">
-                <span class='modal__close_btn'></span>
-            </div>
-            <form action="GET">
-                <legend>Оставьте свой номер и мы вам перезвоним!</legend>
-                <input type="text" placeholder='Имя'>
-                <input type="phone" placeholder='Телефон'>
-                <button>Отправить</button>
-            </form>
+                <div class="modal__close">
+                    <span class='modal__close_btn'></span>
+                </div>
+                <form action="send.php" method="POST">
+                    <legend>Оставьте свой номер и мы вам перезвоним!</legend>
+                    <input type="name" placeholder='Имя'>
+                    <input type="phone" placeholder='Телефон'>
+                    <button type="submit">Отправить</button>
+                </form>
             </div>
         </div>
     </div>
@@ -129,7 +146,8 @@
         </div>
     </footer>
 
-    <script src="scripts/nav.js"></script>
+    <script src="scripts/preloader.js"></script>
+    <script src="scripts/nav_categories.js"></script>
     <script src="scripts/form.js"></script>
     <script src="scripts/cat-pages.js"></script>
     <script>

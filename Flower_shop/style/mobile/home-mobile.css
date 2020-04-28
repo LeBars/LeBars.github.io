@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .home{
         background: url(../../img/media/bg_home-tablet.jpg) center no-repeat;
         background-size: cover;

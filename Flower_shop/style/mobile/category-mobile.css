@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
     .catalog{
         padding-top: 20%;
     }
@@ -13,7 +13,11 @@
     .border{
         display: none;
     }
-    .catalog__card{
-        width: 100%;
+    .catalog__card_title {
+        height: 70%;
+    }
+    .catalog__card {
+        width: 98%;
+        height: 450px;
     }
 }

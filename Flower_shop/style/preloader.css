@@ -1,0 +1,98 @@
+.preloader {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #3B181E;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.done {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.line {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 1vw;
+}
+
+.preloader .line:nth-last-child(1) {
+    -webkit-animation: loadingC .6s .1s linear infinite;
+    animation: loadingC .6s .1s linear infinite;
+}
+
+.preloader .line:nth-last-child(2) {
+    -webkit-animation: loadingC .6s .2s linear infinite;
+    animation: loadingC .6s .2s linear infinite;
+}
+
+.preloader .line:nth-last-child(3) {
+    -webkit-animation: loadingC .6s .3s linear infinite;
+    animation: loadingC .6s .3s linear infinite;
+}
+
+@-webkit-keyframes loadingC {
+    0 {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    50% {
+        -webkit-transform: translate(0, 10vh);
+        transform: translate(0, 10vh);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes loadingC {
+    0 {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    50% {
+        -webkit-transform: translate(0, 10vh);
+        transform: translate(0, 10vh);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .line {
+    }
+}
+@media only screen and (max-width: 767px){
+    .line {
+        width: 20px;
+        height: 20px;
+    }
+}
