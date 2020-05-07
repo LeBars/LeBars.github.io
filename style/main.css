@@ -1,0 +1,43 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #1e383c;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #c3ccd3;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+div {
+  font-family: "Comfortaa";
+  color: #1e383c;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  z-index: 1;
+}
