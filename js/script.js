@@ -12,9 +12,9 @@ tabs.addEventListener('click', function (event) {
     let index = event.target.closest('a').dataset.index;
     if(displayWidth <= 768) {
         sidebar.style.animationDirection = 'reverse';
-        sidebar.classList.add('anim');
+        sidebar.className = 'sidebar anim';
         setTimeout(() => {
-            sidebar.classList.remove('anim');
+            sidebar.className = 'sidebar';
             sidebar.style.display = 'none';
             sidebar.style.animationDirection = 'normal';
         }, 800)
@@ -25,28 +25,32 @@ tabs.addEventListener('click', function (event) {
 
 function openTab(index){
     tabsColl.forEach(function(el) {
-        el.classList.remove('sidebar__tab_active')
+        el.className = 'sidebar__tab';
         if (el.dataset.index == index){
-            el.classList.add('sidebar__tab_active')
+            el.className = 'sidebar__tab sidebar__tab_active';
         }
     });
 }
 
 function openPage(index){
     pagesColl.forEach(function (el) {
+        
         el.classList.add('hide-display')
         if (el.dataset.index == index) {
-            el.classList.remove('hide-display')
-            el.classList.add('show-anim')
+            console.log(el.className)
+            el.className = `container container-${index}`
+            console.log(el.className)
+            el.className = `container container-${index} show-anim`
         }
+        
     });
 }
 window.onload = function () {
 
     setTimeout(function () {
         let preloader = document.querySelector('.preloader');
-        if (!preloader.classList.contains('done')) {
-            preloader.classList.add('done');
+        if (preloader.className != 'done') {
+            preloader.className = 'preloader done';
         }
     }, 1800);
 }
@@ -60,9 +64,9 @@ let toggle = document.querySelector('.toggle-menu'),
 
 toggle.addEventListener('click', function () {
     sidebar.style.display = 'flex';
-    sidebar.classList.add('anim');
+    sidebar.className = 'sidebar anim';
     setTimeout(() => {
-        sidebar.classList.remove('anim');
+        sidebar.className = 'sidebar';
     }, 800)
 })
 
