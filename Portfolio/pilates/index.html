@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilates Studio</title>
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__close"><span></span></div>
+      <div class="nav__menu">
+        <ul>
+              <li><a href="#">О пилатесе</a></li>
+              <li><a href="#">Расписание и стоимость</a></li>
+              <li><a href="#">Как проходят занятия</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="popup__overlay">
+      <div class="popup">
+        <div class="popup__close"><span></span></div>
+        <div class="popup__wrapper">
+          <h2> Хочешь записаться на занятие?</h2><span>   Оставьте контакты и наши менеджеры свяжуться в ближайшее время</span>
+          <form action="#">
+            <div class="form__inputs">
+              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="Телефон">
+              <input type="text" placeholder="E-mail">
+            </div>
+            <div class="form__checked">
+              <div class="box">
+                <input class="checkbox" type="checkbox" id="box">
+                <label for="box">Я согласен на <a href="#">обработку данных</a></label>
+              </div>
+              <button>Записаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <section class="home" id="home">
+      <div class="pagination">
+        <div class="pagination__number">01</div>
+        <div class="pagination__line"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+      </div>
+      <div class="b-circle"></div>
+      <div class="m-circle"></div>
+      <div class="home__img"></div>
+      <div class="s-circle-bg"></div>
+      <div class="s-circle-transparent"></div>
+      <div class="container">
+        <header class="home__header"><a class="logo" href="#home"><img src="img/logo.png" alt=""></a><a class="menu-toggle" href="#"><span></span><span></span><span></span></a><a class="phone" href="tel:+79183650707">+7 918 365 07 07</a></header>
+        <main class="home__main">
+          <h1>Студия пилатеса</h1>
+          <div class="description">Твое здоровое тело через 10 занятий</div><a class="btn" href="#packages">Смотреть расписание
+            <div class="arrow"></div></a>
+        </main>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="pagination">
+        <div class="pagination__number">02</div>
+        <div class="pagination__line"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+      </div>
+      <div class="about__img">
+        <div class="about__dots"></div>
+        <div class="about__b-img"></div>
+        <div class="about__sm-img"></div>
+      </div>
+      <main class="container">
+        <h2 class="title-h2">О пилатесе</h2>
+        <p>
+           Пилатес соединяет элементы растяжки 
+          с элементами силовой тренировки
+        </p>
+        <p>
+          Комплекс упражнений укрепляет мышцы пресса 
+          и спины, улучшает гибкость мышц и связок, подвижность суставов и избавляет 
+          от дискомфорта в позвоночнике
+        </p><a href="#trainings"> <span>ПОДРОБНЕЕ</span>
+          <ion-icon name="chevron-forward-outline"></ion-icon></a>
+      </main>
+    </section>
+    <section class="packages" id="packages">
+      <div class="pagination">
+        <div class="pagination__number">03</div>
+        <div class="pagination__line"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+      </div>
+      <main class="container">
+        <h2 class="title-h2">Расписание и стоимость</h2>
+        <div class="packages__items">
+              <div class="package__item">
+                <div class="package__item_number">01</div>
+                <div class="package__item_level"><span>Уровень</span><span>Новичок</span></div>
+                <div class="package__item_cost"><span>150</span><span> руб. / занятие</span></div>
+                <div class="package__item_schedule"><span>9:00 — 10:00</span><span>9:00 — 10:00</span><span>9:00 — 10:00</span></div><a class="btn btn-popup" href="#">Записаться
+                  <div class="arrow"></div></a>
+              </div>
+              <div class="package__item">
+                <div class="package__item_number">02</div>
+                <div class="package__item_level"><span>Уровень</span><span>Профи</span></div>
+                <div class="package__item_cost"><span>200</span><span> руб. / занятие</span></div>
+                <div class="package__item_schedule"><span>18:15 — 19:45</span><span>18:15 — 19:45</span><span>18:15 — 19:45</span></div><a class="btn btn-popup" href="#">Записаться
+                  <div class="arrow"></div></a>
+              </div>
+              <div class="package__item">
+                <div class="package__item_number">03</div>
+                <div class="package__item_level"><span>Уровень</span><span>Мастер</span></div>
+                <div class="package__item_cost"><span>350</span><span> руб. / занятие</span></div>
+                <div class="package__item_schedule"><span>20:00 — 21:30</span><span>20:00 — 21:30</span><span>20:00 — 21:30</span></div><a class="btn btn-popup" href="#">Записаться
+                  <div class="arrow"></div></a>
+              </div>
+        </div>
+      </main>
+    </section>
+    <section class="trainings" id="trainings">
+      <main class="container">
+        <h2 class="title-h2">Как проходят занятия</h2>
+        <div class="training__stages">
+              <div class="training__stage">
+                <div class="training__stage_text">
+                  <h3>Дыхательные техники</h3>
+                  <p>Специальные дыхательные упражнения помогут сконцентрировать внимание и сфокусировать сознание на мышцах тела</p>
+                </div>
+                <div class="training__stage_img">
+                  <div class="img-circle"></div>
+                  <div class="img-dots"></div>
+                  <div class="img-main stage-1"></div>
+                </div>
+              </div>
+              <div class="training__stage">
+                <div class="training__stage_text">
+                  <h3>Разминка</h3>
+                  <p>Перед началом занятия разогреваем тело: проработываем мышцы спины, шеи, выполняем упражнения на баланс под спокойную музыку</p>
+                </div>
+                <div class="training__stage_img">
+                  <div class="img-circle"></div>
+                  <div class="img-dots"></div>
+                  <div class="img-main stage-2"></div>
+                </div>
+              </div>
+              <div class="training__stage">
+                <div class="training__stage_text">
+                  <h3>Основной блок</h3>
+                  <p>Упражнения выполняются лежа на коврике без оборудования или с малым оборудованием, в медленном темпе </p>
+                </div>
+                <div class="training__stage_img">
+                  <div class="img-circle"></div>
+                  <div class="img-dots"></div>
+                  <div class="img-main stage-3"></div>
+                </div>
+              </div>
+              <div class="training__stage">
+                <div class="training__stage_text">
+                  <h3>Стрейчинг</h3>
+                  <p>В конце занятия выполняем специальные упражнения для развития гибкости, снятия усталости, стресса и мышечного напряжения</p>
+                </div>
+                <div class="training__stage_img">
+                  <div class="img-circle"></div>
+                  <div class="img-dots"></div>
+                  <div class="img-main stage-4"></div>
+                </div>
+              </div>
+        </div>
+        <div class="training__stages-mob">
+              <div class="training__stage">
+                <h3>Дыхательные техники</h3>
+                <div class="training__stage_img">
+                  <div class="img-circle"></div>
+                  <div class="img-dots"></div>
+                  <div class="img-main stage-1"></div>
+                </div>
+                <p>Специальные дыхательные упражнения помогут сконцентрировать внимание и сфокусировать сознание на мышцах тела</p>
+              </div>
+              <div class="training__stage">
+                <h3>Разминка</h3>
+                <div class="training__stage_img">
+                  <div class="img-circle"></div>
+                  <div class="img-dots"></div>
+                  <div class="img-main stage-2"></div>
+                </div>
+                <p>Перед началом занятия разогреваем тело: проработываем мышцы спины, шеи, выполняем упражнения на баланс под спокойную музыку</p>
+              </div>
+              <div class="training__stage">
+                <h3>Основной блок</h3>
+                <div class="training__stage_img">
+                  <div class="img-circle"></div>
+                  <div class="img-dots"></div>
+                  <div class="img-main stage-3"></div>
+                </div>
+                <p>Упражнения выполняются лежа на коврике без оборудования или с малым оборудованием, в медленном темпе </p>
+              </div>
+              <div class="training__stage">
+                <h3>Стрейчинг</h3>
+                <div class="training__stage_img">
+                  <div class="img-circle"></div>
+                  <div class="img-dots"></div>
+                  <div class="img-main stage-4"></div>
+                </div>
+                <p>В конце занятия выполняем специальные упражнения для развития гибкости, снятия усталости, стресса и мышечного напряжения</p>
+              </div>
+        </div>
+      </main>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="pagination">
+        <div class="pagination__number">05</div>
+        <div class="pagination__line"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+        <div class="pagination__dot"></div>
+      </div>
+      <main class="container">
+        <h2 class="title-h2"> Отзывы</h2>
+        <div class="slider">
+          <ion-icon class="slider__btn-prev slider__btn" name="chevron-back-outline"></ion-icon>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="shadow-box">
+                      <div class="dots"></div><img src="img/reviews_img-1.png" alt="Аватар">
+                      <div class="info">
+                        <div class="name">Вероника Кулешова</div>
+                        <div class="wrapper">
+                          <div class="age">25 лет</div><a href="#">
+                            <ion-icon name="logo-vk"></ion-icon></a><a href="#">
+                            <ion-icon name="logo-instagram"></ion-icon></a>
+                        </div>
+                        <p>Хожу на пилатес уже пять месяцев. После десяти занятий уже увидела результат: тело подтянулось, улучшилась осанка, появился пресс. И самое главное, пропал сильный изгиб поясничного отдела, который меня очень беспокоил.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="shadow-box">
+                      <div class="dots"></div><img src="img/reviews_img-2.png" alt="Аватар">
+                      <div class="info">
+                        <div class="name">Елизавета Смирнова</div>
+                        <div class="wrapper">
+                          <div class="age">29 лет</div><a href="#">
+                            <ion-icon name="logo-vk"></ion-icon></a><a href="#">
+                            <ion-icon name="logo-instagram"></ion-icon></a>
+                        </div>
+                        <p>Очень нравятся занятия, хожу уже пять месяцев. На занятиях делаем много упражнений на пресс, бедра и спину. Мышци подтянулись, появился рельеф и хорошее настроение :)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="shadow-box">
+                      <div class="dots"></div><img src="img/reviews_img-3.png" alt="Аватар">
+                      <div class="info">
+                        <div class="name">Кристина Егорова</div>
+                        <div class="wrapper">
+                          <div class="age">20 лет</div><a href="#">
+                            <ion-icon name="logo-vk"></ion-icon></a><a href="#">
+                            <ion-icon name="logo-instagram"></ion-icon></a>
+                        </div>
+                        <p>Рекомендую заниматься всем! У меня сколиоз и спина часто болит после рабочего дня. После занятий появилась лекость в мышцах и свобода движений. Приходите! </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <ion-icon class="slider__btn-next slider__btn" name="chevron-forward-outline"> </ion-icon>
+          <div class="swiper-pagination"></div>
+        </div>
+      </main>
+    </section>
+    <secton class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="title-h2">Контакты</h2>
+      </div>
+      <div class="contacts__map">
+        <div class="contacts__info">
+              <div class="contacts__info_contact">
+                <div class="contact-title">Адрес</div>
+                <div class="contact-descr">г. Кропоткин ул. Дугинец 10а</div>
+              </div>
+              <div class="contacts__info_contact">
+                <div class="contact-title">Телефон</div><a class="contact-descr" href="tel:+79183650607">+7 918 365 06 07</a>
+              </div>
+              <div class="contacts__info_contact">
+                <div class="contact-title">E-mail</div><a class="contact-descr" href="email:pilatesplus@gmail.com">pilatesplus@gmail.com</a>
+              </div>
+        </div>
+      </div>
+    </secton>
+    <secton class="contacts-mob" id="contacts">
+      <div class="container">
+        <h2 class="title-h2">Контакты</h2>
+      </div>
+      <div class="contacts__info">
+            <div class="contacts__info_contact">
+              <div class="contact-title">Адрес</div>
+              <div class="contact-descr">г. Кропоткин ул. Дугинец 10а</div>
+            </div>
+            <div class="contacts__info_contact">
+              <div class="contact-title">Телефон</div><a class="contact-descr" href="tel:+79183650607">+7 918 365 06 07</a>
+            </div>
+            <div class="contacts__info_contact">
+              <div class="contact-title">E-mail</div><a class="contact-descr" href="email:pilatesplus@gmail.com">pilatesplus@gmail.com</a>
+            </div>
+      </div>
+      <div class="contacts__map"></div>
+    </secton>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="copyright"><span>Pilates Plus, 2017</span><span>    </span></div><a class="logo" href="#home"><img src="img/logo.png" alt=""></a>
+        <div class="soc-links"><a href="#">
+            <ion-icon name="logo-vk"></ion-icon></a><a href="#">
+            <ion-icon name="logo-facebook"></ion-icon></a><a href="#">
+            <ion-icon name="logo-instagram"></ion-icon></a></div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

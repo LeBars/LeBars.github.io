@@ -37,9 +37,7 @@ function openPage(index){
         
         el.classList.add('hide-display')
         if (el.dataset.index == index) {
-            console.log(el.className)
             el.className = `container container-${index}`
-            console.log(el.className)
             el.className = `container container-${index} show-anim`
         }
         
