@@ -1,101 +1,65 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site</title>
+    <title>Артур Клювиткин</title>
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap">
     <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
-    <div class="preloader">
-      <div class="caption">
-        <div class="cube-loader">
-          <div class="cube loader-1"></div>
-          <div class="cube loader-2"></div>
-          <div class="cube loader-4"></div>
-          <div class="cube loader-3"></div>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#portfolio">портфолио</a></li>
+            <li><a href="about.html">обо мне</a></li>
+          </ul>
+        </nav>
+        <h1 class="header__title">Меня зовут Артур & <br> я делаю вещи в интернете</h1><a href="#portfolio">
+          <svg class="svg-arr">
+            <use xlink:href="img/sprite.svg#down-arrow"></use>
+          </svg></a>
+      </div>
+    </header>
+    <section class="space"></section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="portfolio__header">
+          <h2>Работы</h2>
+          <div class="portfolio__description">Любой сайт - попытка найти прекрасный <span>баланс</span> применения дизайна, технологий, исследований и экспериментов</div>
         </div>
       </div>
-    </div>
-    <main class="main">
-      <section class="sidebar"><img src="img/portret.jpg" alt="">
-        <div class="sidebar__name"> Артур Клювиткин</div>
-        <div class="sidebar__tabs"><a class="sidebar__tab_active sidebar__tab" href="#" data-index="home">
-                  <ion-icon name="home-outline"></ion-icon>
-                  <p>Главная</p></a><a class="sidebar__tab" href="#" data-index="about">
-                  <ion-icon name="people-outline"></ion-icon>
-                  <p>Обо мне</p></a><a class="sidebar__tab" href="#" data-index="portfolio">
-                  <ion-icon name="file-tray-full-outline"></ion-icon>
-                  <p>Портфолио</p></a>
-        </div>
-      </section>
-      <div class="content">
-        <ion-icon class="toggle-menu" name="menu-outline"></ion-icon>
-        <div class="container container-home show-anim" data-index="home">
-          <h1> Артур Клювиткин</h1>
-          <h2>  Freelancer</h2>
-        </div>
-        <div class="container container-about hide-display" data-index="about">
-          <div class="frame"></div>
-          <h1> Обо мне</h1>
-          <div class="about__subtitle">
-            <h2> Опыт разработки 3 года</h2>
-          </div>
-          <div class="about__info">
-            <div class="about__info_img"><img src="img/portret.jpg" alt="Фото"></div>
-            <div class="about__info_text">
-              <h3>Вкратце обо мне</h3>
-              <p>
-                  Привет, меня зовут Артур. 
-                Окончил университет по специальности 
-                «Прикладная информатика в экономике».  
-                Занимаюсь веб-разработкой с 2017 года. 
-                С моими работами можно ознакомиться 
-                в разделе "портфолио".     
-              </p>
-            </div>
-            <div class="about__info_contacts">
-              <div class="about__info_contact"><span>Адрес:</span>
-                <p>Екатеринбург, Россия</p>
-              </div>
-              <div class="about__info_contact"><span>E-mail:</span><a href="mailto:klyuvitkinartur@gmail.com">klyuvitkinartur@gmail.com</a></div>
-              <div class="about__info_contact"><span>Telegram:</span><a href="tg://resolve?domain=lebars">@lebars</a></div>
-              <div class="about__info_soc-links"><a href="https://vk.com/le_bars" target="_blank">
-                          <ion-icon name="logo-vk"></ion-icon></a><a href="https://www.instagram.com/lebars.jpg/" target="_blank">
-                          <ion-icon name="logo-instagram"></ion-icon></a><a href="https://github.com/LeBars" target="_blank">
-                          <ion-icon name="logo-github"></ion-icon></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container container-portfolio hide-display" data-index="portfolio">
-          <div class="frame"></div>
-          <h1> Портфолио</h1>
-          <div class="portfolio__subtitle">
-            <h2> Мои работы</h2>
-          </div>
-          <div class="portfolio__items">
-            <div class="portfolio__items_row">
-                      <div class="portfolio__item">
-                        <div class="portfolio__item_img item2"></div>
-                        <div class="portfolio__item_info">
-                          <h3>Сайт для студии Пилатеса</h3><a href="pilates/index.html" target="_blank">Перейти на сайт</a>
-                        </div>
-                      </div>
-                      <div class="portfolio__item">
-                        <div class="portfolio__item_img item1"></div>
-                        <div class="portfolio__item_info">
-                          <h3>Сайт-визитка для флористического магазина &quot;Букет&quot;</h3><a href="buket/index.html" target="_blank">Перейти на сайт</a>
-                        </div>
-                      </div>
-            </div>
-          </div>
-        </div>
+      <div class="portfolio__items"><a class="item2 portfolio__item" href="pilates/index.html">
+              <div class="portfolio__item_overlay"></div><img src="img/p_l_pilates.png">
+              <div class="title">Пилатес</div></a><a class="item1 portfolio__item" href="buket/index.html">
+              <div class="portfolio__item_overlay"></div><img src="img/p_l_vesna-vsegda.png">
+              <div class="title">Весна всегда</div></a>
       </div>
-    </main>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="contacts__text">Ищешь того, <br> кто разработает тебе сайт?</div><a class="contacts__link" href="mailto:klyuvitkinartur@gmail.com">Напиши</a>
+    </section>
+    <footer class="footer">
+      <div class="footer__soc-links"><a href="https://vk.com/le_bars" target="_blank">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg></a><a href="https://www.instagram.com/lebars.jpg/" target="_blank">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg></a><a href="tg://resolve?domain=lebars" target="_blank">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg></a><a href="https://api.whatsapp.com/send?phone=79058000790" target="_blank">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg></a>
+      </div>
+      <div class="footer__copyright">Разработано - <a href="#">LeBars</a>, 2020 <span>
+          <svg>
+            <use xlink:href="img/sprite.svg#copyright"></use>
+          </svg></span></div>
+    </footer>
     <script src="js/script.js"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
 </html>
