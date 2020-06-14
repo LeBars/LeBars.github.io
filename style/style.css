@@ -324,6 +324,7 @@ a {
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 0em;
+  -webkit-tap-highlight-color: transparent;
 }
 
 li {
@@ -377,7 +378,7 @@ a {
 }
 
 body {
-  background: #292f2b;
+  background: #352d39;
 }
 
 body,
@@ -410,19 +411,103 @@ body {
   }
 }
 
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  overflow: hidden;
+  background: #222;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .5s, visibility .5s;
+}
+
+.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #352d39;
+  animation: spin 1.7s linear infinite;
+  z-index: 11;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #6d435a;
+  animation: spin-reverse 1s linear infinite;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #ff6978;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background: url(../img/bg-vignette.jpg);
-  background-attachment: fixed;
+  background: url(../img/bg-vignette-pink.jpg);
   background-size: auto 100%;
   animation: bgFrames 800ms steps(8) infinite;
-  transition: opacity .8s, visibility .8s;
+  transition: opacity .5s, visibility .8s;
   z-index: 10;
   visibility: visible;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  header {
+    background-size: cover;
+    position: relative;
+  }
 }
 
 header .container {
@@ -433,7 +518,7 @@ header .container {
 
 @keyframes bgFrames {
   100% {
-    background-position: -300% 0;
+    background-position: -200% 0;
   }
 }
 
@@ -446,20 +531,20 @@ header ul {
 }
 
 header ul a {
-  color: rgba(39, 39, 39, 0.5);
+  color: rgba(53, 45, 57, 0.8);
   transition: color 1s;
   font-size: 1.3rem;
   font-weight: 300;
 }
 
 header ul a:hover {
-  color: #272727;
+  color: #352d39;
 }
 
 header .header__title {
   width: 100%;
   line-height: 72px;
-  color: #d8d5d5;
+  color: #fffcf9;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -476,18 +561,33 @@ header .container > a {
   left: 50%;
   transform: translateX(-50%);
   animation: arrow 1s infinite alternate;
+  outline: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  header .container > a {
+    display: none;
+  }
 }
 
 .svg-arr {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  fill: #d8d5d5;
+  fill: #fffcf9;
 }
 
 @keyframes arrow {
   100% {
     bottom: 1%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  @keyframes arrow {
+    100% {
+      bottom: 18%;
+    }
   }
 }
 
@@ -507,6 +607,12 @@ header .container > a {
   height: 100vh;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .space {
+    display: none;
+  }
+}
+
 .portfolio {
   width: 100%;
   padding-bottom: 50px;
@@ -520,7 +626,7 @@ header .container > a {
 .portfolio .portfolio__header h2 {
   display: inline-block;
   padding-top: 80px;
-  color: #d8d5d5;
+  color: #fffcf9;
   text-transform: uppercase;
   line-height: 50px;
   margin: auto;
@@ -541,20 +647,20 @@ header .container > a {
   bottom: 0;
   width: 30px;
   height: 5px;
-  background: #e31b6d;
+  background: #ff6978;
 }
 
 .portfolio .portfolio__header .portfolio__description {
   margin-top: 30px;
   line-height: 40px;
   text-align: center;
-  color: #d8d5d5;
+  color: #fffcf9;
   font-weight: 100;
 }
 
 .portfolio .portfolio__header .portfolio__description span {
   font-weight: 500;
-  border-bottom: 1px solid #e31b6d;
+  border-bottom: 1px solid #ff6978;
 }
 
 .portfolio .portfolio__items {
@@ -597,12 +703,13 @@ header .container > a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 255, 255, 0.5);
+  background: rgba(255, 105, 120, 0.5);
   transition: background 1s;
+  border-radius: 10px;
 }
 
 .portfolio__item:hover .portfolio__item_overlay {
-  background: rgba(0, 255, 255, 0.8);
+  background: rgba(255, 105, 120, 0.8);
 }
 
 .portfolio__item img {
@@ -679,9 +786,9 @@ header .container > a {
 .contacts {
   display: flex;
   background: url(../img/bg-vignette.jpg);
-  background-attachment: fixed;
+  background: url(../img/bg-vignette-pink.jpg);
   background-size: auto 100%;
-  animation: bgFrames 800ms steps(8) infinite;
+  animation: bgFramesCon 800ms steps(3) infinite;
   width: 100%;
   height: 40vh;
   justify-content: space-evenly;
@@ -691,9 +798,7 @@ header .container > a {
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .contacts {
     flex-direction: column;
-    padding: 20px 0;
-    animation-name: none;
-    background-size: cover;
+    padding: 20px 0 50px 0;
   }
 }
 
@@ -704,7 +809,7 @@ header .container > a {
 }
 
 .contacts .contacts__text {
-  color: #272727;
+  color: #352d39;
   line-height: 50px;
   font-weight: 300;
   font-size: 2rem;
@@ -723,9 +828,15 @@ header .container > a {
 }
 
 .contacts .contacts__link {
-  color: #d8d5d5;
+  color: #fffcf9;
   font-size: 6rem;
   font-weight: 400;
+}
+
+@keyframes bgFramesCon {
+  100% {
+    background-position: -100% 0;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -755,18 +866,14 @@ header .container > a {
 }
 
 .about__header ul a {
-  color: rgba(0, 255, 255, 0.5);
+  color: black;
   transition: color 1s;
   font-size: 1.3rem;
   font-weight: 300;
 }
 
-.about__header ul a:hover {
-  color: cyan;
-}
-
 .about h1 {
-  color: #d8d5d5;
+  color: #fffcf9;
   font-size: 2.5rem;
   line-height: 60px;
   padding-top: 80px;
@@ -780,11 +887,11 @@ header .container > a {
 }
 
 .about h1 span {
-  border-bottom: 1px solid #e31b6d;
+  border-bottom: 1px solid #ff6978;
 }
 
 .about p {
-  color: #d8d5d5;
+  color: #fffcf9;
   font-size: 1.5rem;
   line-height: 35px;
   margin-top: 25px;
@@ -792,7 +899,7 @@ header .container > a {
 }
 
 .about p span {
-  border-bottom: 1px solid #e31b6d;
+  border-bottom: 1px solid #ff6978;
 }
 
 .about__skills {
@@ -829,7 +936,7 @@ header .container > a {
   position: relative;
   font-size: 1rem;
   line-height: 70px;
-  color: #d8d5d5;
+  color: #fffcf9;
 }
 
 .about__skills .about__skills_items .about__skills_title::after {
@@ -839,11 +946,17 @@ header .container > a {
   width: 40px;
   bottom: 0;
   left: 0;
-  background: #e31b6d;
+  background: #ff6978;
 }
 
 .about__skills .about__skills_items ul {
   display: inline-block;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .about__skills .about__skills_items ul {
+    display: block;
+  }
 }
 
 .about__skills .about__skills_items ul li {
@@ -852,8 +965,14 @@ header .container > a {
   padding-left: 20px;
   line-height: 40px;
   position: relative;
-  color: #d8d5d5;
+  color: #fffcf9;
   font-weight: 300;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .about__skills .about__skills_items ul li {
+    padding-left: 15%;
+  }
 }
 
 .about__skills .about__skills_items ul li::before {
@@ -864,7 +983,13 @@ header .container > a {
   top: 50%;
   transform: translate(-50%);
   left: 10px;
-  background: #e31b6d;
+  background: #ff6978;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .about__skills .about__skills_items ul li::before {
+    left: 10%;
+  }
 }
 
 .about__skills .about__skills_items ul .about__item-details {
@@ -968,7 +1093,7 @@ header .container > a {
 }
 
 .footer__soc-links a .icon {
-  fill: #000;
+  fill: #111;
   display: block;
   width: 100%;
   height: 100%;
@@ -995,7 +1120,7 @@ header .container > a {
   margin-top: 40px;
   font-size: .7rem;
   letter-spacing: 0.06rem;
-  color: #d8d5d5;
+  color: #fffcf9;
   font-weight: 200;
   text-align: center;
 }
@@ -1014,8 +1139,8 @@ header .container > a {
 
 .footer__copyright a {
   font-size: .7rem;
-  color: #d8d5d5;
-  border-bottom: 1px solid #e31b6d;
+  color: #fffcf9;
+  border-bottom: 1px solid #ff6978;
   letter-spacing: 0.04rem;
 }
 
@@ -1041,7 +1166,7 @@ header .container > a {
 .footer__copyright span svg {
   width: 100%;
   height: 100%;
-  fill: #d8d5d5;
+  fill: #fffcf9;
 }
 
 @media only screen and (min-width: 1920px) {
