@@ -173,6 +173,12 @@ header .container { position: relative; display: -webkit-box; display: -ms-flexb
 
 @keyframes bgFrames { 100% { background-position: -200% 0; } }
 
+header svg { position: absolute; display: block; width: 100%; height: 90%; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+
+header svg use { width: 90vw; height: 90vh; -o-object-fit: cover; object-fit: cover; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) { header svg { display: none; } }
+
 header ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; position: absolute; top: 5%; width: 100%; }
 
 header ul a { color: rgba(53, 45, 57, 0.8); -webkit-transition: color 1s; -o-transition: color 1s; transition: color 1s; font-size: 1.3rem; font-weight: 300; }
@@ -233,11 +239,17 @@ header .container > a { position: absolute; width: 40px; height: 40px; bottom: 2
 
 .portfolio__item .title { font-size: 2.5rem; z-index: 5; color: #fff; padding-top: 5%; }
 
+@media only screen and (min-width: 320px) and (max-width: 767px) { .portfolio__item .title { font-size: 2rem; } }
+
 .item1 { background: url(../img/p_bg_vesna-vsegda.png) center no-repeat; background-size: cover; }
 
 .item1 img { width: 15%; height: 15%; }
 
 .item2 { background: url(../img/p_bg_pilates.jpg) center no-repeat; background-size: cover; }
+
+.item3 { background: url(../img/p_bg_course.jpg) center no-repeat; background-size: cover; }
+
+.item3 .title { font-size: 2rem; }
 
 @media only screen and (min-width: 1920px) { .portfolio { padding-bottom: 100px; }
   .portfolio .portfolio__header h2 { line-height: 90px; }
@@ -251,7 +263,7 @@ header .container > a { position: absolute; width: 40px; height: 40px; bottom: 2
   .portfolio .portfolio__header .portfolio__description { margin-top: 60px; line-height: 80px; }
   .portfolio .portfolio__items { margin-top: 90px; } }
 
-.contacts { display: -webkit-box; display: -ms-flexbox; display: flex; background: url(../img/bg-vignette.jpg); background: url(../img/bg-vignette-pink.jpg); background-size: auto 100%; -webkit-animation: bgFrames 800ms steps(8) infinite; animation: bgFrames 800ms steps(8) infinite; width: 100%; height: 40vh; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.contacts { display: -webkit-box; display: -ms-flexbox; display: flex; background: url(../img/bg-vignette.jpg); background: url(../img/bg-vignette-pink.jpg); background-attachment: fixed; background-size: auto 100%; -webkit-animation: bgFrames 800ms steps(8) infinite; animation: bgFrames 800ms steps(8) infinite; width: 100%; height: 40vh; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) { .contacts { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 20px 0 50px 0; -webkit-animation: bgFramesCon 800ms steps(3) infinite; animation: bgFramesCon 800ms steps(3) infinite; } }
 
@@ -264,6 +276,10 @@ header .container > a { position: absolute; width: 40px; height: 40px; bottom: 2
 @media only screen and (min-width: 768px) and (max-width: 1024px) { .contacts .contacts__text { text-align: center; } }
 
 .contacts .contacts__link { color: #fffcf9; font-size: 6rem; font-weight: 400; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) { .contacts .contacts__link { font-size: 4rem; } }
+
+@keyframes bgFrames { 100% { background-position: -200% 0; } }
 
 @-webkit-keyframes bgFramesCon { 100% { background-position: -100% 0; } }
 
@@ -279,7 +295,7 @@ header .container > a { position: absolute; width: 40px; height: 40px; bottom: 2
 
 .about__header ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-top: 5%; }
 
-.about__header ul a { color: black; -webkit-transition: color 1s; -o-transition: color 1s; transition: color 1s; font-size: 1.3rem; font-weight: 300; }
+.about__header ul a { color: rgba(255, 252, 249, 0.3); -webkit-transition: color 1s; -o-transition: color 1s; transition: color 1s; font-size: 1.3rem; font-weight: 300; }
 
 .about h1 { color: #fffcf9; font-size: 2.5rem; line-height: 60px; padding-top: 80px; }
 
