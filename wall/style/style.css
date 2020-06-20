@@ -47,7 +47,10 @@ ul {
 p {
   margin: 0;
 }
-
+.container{
+  width: 85%;
+  margin: auto;
+}
 
 
 .page-header {
@@ -90,9 +93,9 @@ p {
   max-width: 340px;
   margin-top: 40px;
 }
-.logo .logo-inner{
+/* .logo .logo-inner{
   background: #000;
-}
+} */
 
 .page-header__inner .logo a {
   text-decoration: none;
@@ -300,27 +303,28 @@ p {
 
 .intro__title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
   padding-bottom: 20px;
 }
 
 .intro__title span {
-  width: 100%;
+  display: block;
 }
 
 .intro__subtitle {
-  font-size: 16px;
+  font-size: 22px;
   line-height: 34px;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
   padding-bottom: 40px;
   letter-spacing: 0.02em;
+  font-weight: normal;
 }
 
 .btn-intro {
@@ -771,7 +775,8 @@ p {
 }
 
 .car-text__content--active {
-  background-color: rgba(255, 255, 255, 0);
+  /* background-color: red; */
+  background: #0000D3;
   opacity: 1;
 }
 
@@ -781,6 +786,7 @@ p {
   background-size: cover;
   /* padding: 120px 0 135px 0; */
   height: 100vh;
+  display: flex;
 }
 
 .about-wrapp {
@@ -795,18 +801,22 @@ p {
 
 .about-header__title {
   padding-bottom: 20px;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.05em;
 }
 
 .about-header__subtitle {
   width: 95%;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
+  
   letter-spacing: 0.02em;
 }
 
 .about-header__subtitle p {
   padding-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .about-header__wrapp {
@@ -829,7 +839,7 @@ p {
 
 .about-text {
   -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+      flex-basis: 55%;
 }
 
 .about-text__inner {
@@ -837,7 +847,7 @@ p {
   font-size: 16px;
   line-height: 32px;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .about-text__inner p {
@@ -894,7 +904,7 @@ p {
 
 .contact-adress {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 26px;
   padding-bottom: 20px;
 }
@@ -904,9 +914,10 @@ p {
 }
 
 .contact-email {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 26px;
   padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .contact-email a {
@@ -914,7 +925,7 @@ p {
 }
 
 .contact-tel {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 26px;
   padding-bottom: 20px;
 }
@@ -953,6 +964,7 @@ p {
   background-size: cover;
   /* padding: 120px 0 115px 0; */
   height: 100vh;
+  display: flex;
 }
 
 .gallery-title {
@@ -1052,6 +1064,7 @@ p {
   background-size: cover;
   /* padding: 120px 0 120px 0; */
   height: 100vh;
+  display: flex;
 }
 
 .guarantee-wrapp {
@@ -1062,6 +1075,12 @@ p {
 
 .guarantee-header {
   padding-bottom: 30px;
+}
+.guarantee-header__title {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .guarantee-header__subtitle {
@@ -1074,6 +1093,7 @@ p {
   font-size: 28px;
   line-height: 42px;
   letter-spacing: 0.05em;
+  font-weight: bold;
 }
 
 .guarantee-header__wrapp {
@@ -1094,13 +1114,12 @@ p {
           box-shadow: 0px 0px 16px #0f26f5;
 }
 
-.guarantee__titlt {
-  font-weight: bold;
-  font-size: 18px;
+.guarantee__title {
+  font-weight: normal;
+  font-size: 20px;
   line-height: 30px;
   padding-bottom: 20px;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
 }
 
 .guarantee-text {
@@ -1131,6 +1150,8 @@ p {
   font-size: 18px;
   letter-spacing: 0.02em;
   line-height: 24px;
+  width: 90%;
+  display: block;
 }
 
 .guarantee-img {
@@ -1170,24 +1191,25 @@ p {
   background-size: cover;
   /* padding: 120px 0 80px 0; */
   height: 100vh;
+  display: flex;
 }
 
 .insurance-wrapp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .insurance__titlt {
   font-weight: bold;
-  text-transform: uppercase;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 30px;
-  padding-bottom: 40px;
+  height: 10%;
 }
 
 .insurance-header {
-  padding-bottom: 95px;
+  padding-bottom: 60px;
 }
 
 .insurance-header__title {
@@ -1220,24 +1242,31 @@ p {
 
 .insurance-text {
   -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+      flex-basis: 40%;
 }
 
 .insurance-text__border {
-  background: url("../img/border-hight.svg");
+  background: url("../img/border-hight.svg") center no-repeat;
   background-position: center;
-  background-size: cover;
-  width: 65%;
-  padding: 65px 60px;
+  background-size: contain;
+  /* width: 65%; */
+  /* padding: 65px 60px; */
   text-align: left;
   font-size: 18px;
   line-height: 28px;
   text-transform: uppercase;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.insurance-text__border div{
+  width: 80%;
 }
 
 .insurance-img {
   -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+      flex-basis: 40%;
   position: relative;
 }
 
@@ -1265,8 +1294,9 @@ p {
   position: relative;
   background: url("../img/фон_подход.png");
   background-size: cover;
-  padding: 5vh 0 4vh 0;
+  /* padding: 5vh 0 4vh 0; */
   height: 100vh;
+  display: flex;
 }
 
 .approach-inner {
@@ -1382,7 +1412,7 @@ p {
 .footer-link__studio {
   color: #fff;
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 30px;
 }
 
@@ -1476,6 +1506,9 @@ p {
 .swiper-slide {
   background-size: cover;
   background-position: center;
+}
+.swiper-slide img{
+  object-fit: contain;
 }
 
 .approach__gallery--top {
@@ -1890,6 +1923,34 @@ p {
 
 @media screen and (max-width: 1200px) {
   .page__content-wrapp {
+    min-width: 1920px;
+    height: 1280px;
+  }
+  .approach{
+    min-width: 1920px;
+    height: 1280px;
+  }
+  .car {
+    min-width: 1920px;
+    height: 1280px;
+  }
+  .guarantee {
+    min-width: 1920px;
+    height: 1280px;
+  }
+  .insurance {
+    min-width: 1920px;
+    height: 1280px;
+  }
+  .gallery {
+    min-width: 1920px;
+    height: 1280px;
+  }
+  .about {
+    min-width: 1920px;
+    height: 1280px;
+  }
+  .contact-inner {
     min-width: 1920px;
     height: 1280px;
   }
