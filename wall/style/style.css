@@ -48,6 +48,8 @@ p {
   margin: 0;
 }
 
+
+
 .page-header {
   position: relative;
   padding-top: 17px;
@@ -259,6 +261,7 @@ p {
 .page__content-wrapp {
   position: relative;
   height: 100vh;
+  /* min-width: 1400px; */
   background: url("../img/С-ФОНОМ.gif");
   background-repeat: no-repeat;
   background-position: center;
@@ -1884,3 +1887,10 @@ p {
   background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 1200px) {
+  .page__content-wrapp {
+    min-width: 1920px;
+    height: 1280px;
+  }
+}
