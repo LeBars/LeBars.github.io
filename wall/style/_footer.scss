@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  background-color: #000000;
+  &-inner {
+    padding-left: 20px;
+  }
+  &-link__studio {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}

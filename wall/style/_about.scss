@@ -1,0 +1,78 @@
+.about {
+  position: relative;
+  background: url("../img/фон_о_себе.jpg");
+  background-size: cover;
+  padding: 120px 0 135px 0;
+  &-wrapp {
+    display: flex;
+  }
+  &__titlte {
+  }
+  &-header {
+    padding-bottom: 55px;
+    &__title {
+      padding-bottom: 20px;
+    }
+    &__subtitle {
+      width: 95%;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+
+      & p {
+        padding-top: 20px;
+      }
+    }
+    &__wrapp {
+      position: relative;
+      padding-left: 5%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(90.47deg, #0545c1 5.05%, #b9d1ff 120.19%);
+        box-shadow: 0px 0px 16px #0f26f5;
+      }
+    }
+  }
+  &-text {
+    flex-basis: 60%;
+    &__inner {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      & p {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  &-img {
+    flex-basis: 40%;
+    &__inner {
+      position: relative;
+      padding-left: 5%;
+      // &::before {
+      //   position: absolute;
+      //   content: "";
+      //   right: 0;
+      //   left: -30%;
+      //   top: 0;
+      //   bottom: 0;
+      //   opacity: 1;
+      //   z-index: -1;
+      //   max-height: 70%;
+      //   background: url("../img/сертификат1.png");
+      //   background-repeat: no-repeat;
+      //   background-position: bottom, center;
+      // }
+    }
+  }
+}

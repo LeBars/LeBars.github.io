@@ -1,0 +1,92 @@
+<section class="car" id="car">
+      <div class="container">
+        <div class="car-inner">
+          <div class="car-3d">
+            <div class="car-3d__top 3d">
+              <ul class="car__card">
+                <li class="car-item">
+                  <div class="car-text">
+                    <div class="car-text__title">пакет 1</div>
+                  </div>
+                </li>
+                <li class="car-item">
+                  <div class="car-text">
+                    <div class="car-text__title">пакет 2</div>
+                  </div>
+                </li>
+                <li class="car-item">
+                  <div class="car-text">
+                    <div class="car-text__title">пакет 3</div>
+                  </div>
+                </li>
+                <li class="car-item">
+                  <div class="car-text">
+                    <div class="car-text__title">пакет 4</div>
+                  </div>
+                </li>
+                <li class="car-item">
+                  <div class="car-text">
+                    <div class="car-text__title">пакет 5</div>
+                  </div>
+                </li>
+                <li class="car-item">
+                  <div class="car-text">
+                    <div class="car-text__title"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="car-3d__bottom 3d">
+              <ul class="car__card--bottom">
+                <li class="car-item">
+                  <div class="car-text">
+                    <div class="car-text__inner">
+                      капот <br />
+                      и <br />
+                      фары
+                    </div>
+                  </div>
+                </li>
+                <li class="car-item">
+                  <div class="car-text">
+                    <div class="car-text__inner">
+                      капот, фары <br />
+                      бампер, <br />
+                      ручки
+                    </div>
+                  </div>
+                </li>
+                <li class="car-item">
+                  <div class="car-text">
+                    <div class="car-text__inner">
+                      капот, фары <br />
+                      бампер, ручки <br />
+                      перед, крылья
+                    </div>
+                  </div>
+                </li>
+                <li class="car-item">
+                  <div class="car-text">
+                    <div class="car-text__inner">
+                      капот, фары, бампер, ручки перед, крылья, стойки лобового
+                      полоса на крышу
+                    </div>
+                  </div>
+                </li>
+                <li class="car-item">
+                  <div class="car-text">
+                    <div class="car-text__inner">весь авто</div>
+                  </div>
+                </li>
+                <li class="car-item">
+                  <div class="car-text">
+                    <div class="car-text__inner"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="car-3d__back 3d"></div>
+          </div>
+        </div>
+      </div>
+    </section>
