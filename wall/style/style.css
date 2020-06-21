@@ -1,7 +1,7 @@
 @charset "UTF-8";
 html{
   font-size: 20px;
-  /* overflow: hidden; */
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 @media screen and (min-width: 1025px) and (max-width: 1439px){
@@ -258,8 +258,8 @@ p {
   text-align: end;
   list-style: none;
   z-index: 14;
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 1rem;
+  line-height: 30px;
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -280,7 +280,7 @@ p {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-  line-height: 50px;
+  line-height: 30px;
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
