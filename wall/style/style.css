@@ -22,6 +22,7 @@ html{
 body {
   margin: 0;
   font-family: Copperplate, sans-serif;
+  font-family: VacansiaC, sans-serif;
   color: #fff;
   overflow: hidden;
 }
@@ -32,6 +33,44 @@ body {
   body {
     overflow: visible;
   }
+}
+@font-face {
+  font-family: 'VacansiaLightC';
+
+  src: url('https://nomail.com.ua/files/eot/cab9d30a49e2ed50bb23c8e225d0f26e.eot?#iefix') format('embedded-opentype'),
+    url('https://nomail.com.ua/files/woff/cab9d30a49e2ed50bb23c8e225d0f26e.woff') format('woff'),
+    url('https://nomail.com.ua/files/woff2/cab9d30a49e2ed50bb23c8e225d0f26e.woff2') format('woff2');
+    font-weight: 300;
+}
+@font-face {
+  font-family: 'VacansiaLightC';
+  src: local('VacansiaLightC'), url('https://nomail.com.ua/files/woff/cab9d30a49e2ed50bb23c8e225d0f26e.woff') format('woff');
+}
+@font-face {
+  font-family: 'VacansiaMediumC';
+
+  src: url('https://nomail.com.ua/files/eot/96ff18fed6a633ad8091db429673c76d.eot?#iefix') format('embedded-opentype'),
+    url('https://nomail.com.ua/files/woff/96ff18fed6a633ad8091db429673c76d.woff') format('woff'),
+    url('https://nomail.com.ua/files/woff2/96ff18fed6a633ad8091db429673c76d.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+  font-family: 'VacansiaMediumC';
+  src: local('VacansiaMediumC'), url('https://nomail.com.ua/files/woff/96ff18fed6a633ad8091db429673c76d.woff') format('woff');
+}
+@font-face {
+  font-family: 'VacansiaC';
+
+  src: url('https://nomail.com.ua/files/eot/95095b711071a0c808e22bd70f03ab87.eot?#iefix') format('embedded-opentype'),
+    url('https://nomail.com.ua/files/woff/95095b711071a0c808e22bd70f03ab87.woff') format('woff'),
+    url('https://nomail.com.ua/files/woff2/95095b711071a0c808e22bd70f03ab87.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+  font-family: 'VacansiaC';
+  src: local('VacansiaC'), url('https://nomail.com.ua/files/woff/95095b711071a0c808e22bd70f03ab87.woff') format('woff');
 }
 @font-face {
   font-family: 'Copperplate';
@@ -113,6 +152,7 @@ p {
   right: 40px;
   top: 40px;
   font-weight: bold;
+  font-family: VacansiaMediumC, sans-serif;
   font-size: 22px;
   line-height: 30px;
   letter-spacing: 0.05em;
@@ -369,6 +409,7 @@ p {
 
 .intro__title {
   font-weight: bold;
+  font-family: VacansiaMediumC, sans-serif;
   font-size: 1.4rem;
   line-height: 2rem;
   text-align: center;
@@ -376,7 +417,7 @@ p {
   text-transform: uppercase;
   color: #fff;
   padding-bottom: 20px;
-  font-family: 'Roboto',
+  /* font-family: 'Roboto', */
   sans-serif;
 }
 
@@ -389,10 +430,10 @@ p {
   line-height: 2rem;
   text-align: center;
   color: #fff;
-  text-transform: uppercase;
   padding-bottom: 40px;
   letter-spacing: 0.02em;
   font-weight: 300;
+  font-family: VacansiaLightC, sans-serif;
 }
 
 .btn-intro {
@@ -470,7 +511,7 @@ p {
       -ms-flex-align: end;
           align-items: flex-end;
   background: url("../img/фон_3д_маш.jpg");
-  background-position: center;
+  background-position: top;
   background-size: cover;
   height: 100vh;
 }
@@ -1025,6 +1066,7 @@ p {
   font-weight: bold;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-family: VacansiaMediumC, sans-serif;
 }
 
 .about-header__wrapp {
@@ -1055,6 +1097,8 @@ p {
   font-size: .8rem;
   line-height: 1.5rem;
   letter-spacing: 0.1em;
+  font-family: VacansiaMediumC,
+  sans-serif;
   /* text-transform: uppercase; */
 }
 
@@ -1114,6 +1158,7 @@ p {
   font-size: 1rem;
   line-height: 1.2rem;
   padding-bottom: 20px;
+  font-family: VacansiaC, sans-serif;
 }
 
 .contact-adress a {
@@ -1147,6 +1192,8 @@ p {
 
 .contact_work {
   font-weight: bold;
+  font-family: VacansiaMediumC,
+  sans-serif;
   font-size: 1.1rem;
   line-height: 1.5rem;
   padding-top: 70px;
@@ -1333,6 +1380,8 @@ p {
   line-height: 2.1rem;
   letter-spacing: 0.05em;
   font-weight: bold;
+  font-family: VacansiaMediumC,
+  sans-serif;
 }
 
 .guarantee-header__wrapp {
@@ -1355,6 +1404,8 @@ p {
 
 .guarantee__title {
   font-weight: normal;
+  font-family: VacansiaC,
+  sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   padding-bottom: 20px;
@@ -1481,6 +1532,8 @@ p {
 
 .insurance__titlt {
   font-weight: bold;
+  font-family: VacansiaMediumC,
+  sans-serif;
   font-size: 1.1rem;
   line-height: 1.5rem;
   height: 10%;
@@ -1623,18 +1676,23 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: VacansiaC,
+  sans-serif;
 }
 
 .approach-text__inner {
   max-width: 80%;
   font-weight: 300;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
   letter-spacing: 0.1em;
+  font-family: VacansiaLightC, sans-serif;
 }
 
 .approach-text__subtitle {
   font-weight: bold;
+  font-family: VacansiaMediumC,
+  sans-serif;
   font-size: 1.5rem;
   line-height: 2rem;
   padding-top: 20px;
