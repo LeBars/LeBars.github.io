@@ -372,10 +372,12 @@ p {
   font-size: 1.4rem;
   line-height: 2rem;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #fff;
   padding-bottom: 20px;
+  font-family: 'Roboto',
+  sans-serif;
 }
 
 .intro__title span {
@@ -390,7 +392,7 @@ p {
   text-transform: uppercase;
   padding-bottom: 40px;
   letter-spacing: 0.02em;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .btn-intro {
@@ -460,7 +462,7 @@ p {
 }
 
 .car {
-  /* position: relative; */
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -987,7 +989,7 @@ p {
 }
 
 .about {
-  /* position: relative; */
+  position: relative;
   background: url("../img/фон_о_себе.jpg");
   background-size: cover;
   /* padding: 120px 0 135px 0; */
@@ -1169,6 +1171,7 @@ p {
 }
 
 .gallery {
+  position: relative;
   background: url("../img/фон_галерия.jpg");
   background-size: cover;
   /* padding: 120px 0 115px 0; */
@@ -1292,7 +1295,7 @@ p {
 }
 
 .guarantee {
-  /* position: relative; */
+  position: relative;
   background: url("../img/фон_гарантия.jpg");
   background-size: cover;
   /* padding: 120px 0 120px 0; */
@@ -1454,7 +1457,7 @@ p {
 }
 
 .insurance {
-  /* position: relative; */
+  position: relative;
   background: url("../img/фон_полис.jpg");
   background-size: cover;
   /* padding: 120px 0 80px 0; */
@@ -1575,7 +1578,7 @@ p {
 }
 
 .approach {
-  /* position: relative; */
+  position: relative;
   background: url("../img/фон_подход.png");
   background-size: cover;
   /* padding: 5vh 0 4vh 0; */
@@ -1623,16 +1626,16 @@ p {
 }
 
 .approach-text__inner {
-  max-width: 95%;
-  font-weight: normal;
-  font-size: 1rem;
+  max-width: 80%;
+  font-weight: 300;
+  font-size: 1.3rem;
   line-height: 1.5rem;
   letter-spacing: 0.1em;
 }
 
 .approach-text__subtitle {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   padding-top: 20px;
   padding-bottom: 60px;
@@ -1985,12 +1988,13 @@ p {
 }
 @media screen and (min-width: 1440px){
   .btn-car {
-    bottom: 10%;
+    bottom: 0;
+    left: calc(50% - 170px);
   }
 }
 @media screen and (min-width: 1920px) {
   .btn-car {
-    bottom: 15%;
+    bottom: 0;
     left: calc(50% - 180px);
   }
 }
@@ -2383,4 +2387,44 @@ p {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-10px, -12px);
   transform: rotate(45deg) translate(-10px, -12px);
+}
+
+.scrolling{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 50%;
+  /* background: #fff; */
+  z-index: 10;
+  justify-content: space-evenly;
+}
+.scrolling-item{
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #92A4C8;
+  cursor: pointer;
+}
+.scrolling-item-active{
+  width: 4px;
+  height: 4px;
+  margin: 0 auto;
+  background: #fff;
+}
+.scrolling-item-active::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  cursor: pointer;
 }
