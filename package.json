@@ -1,0 +1,11 @@
+{
+  "name": "lebars",
+  "version": "1.0.0",
+  "description": "Main site",
+  "main": "main.js",
+  "author": "Artur <klyuvitkinartur@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
