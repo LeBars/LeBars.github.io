@@ -1,11 +1,17 @@
 {
-  "name": "lebars",
-  "version": "1.0.0",
-  "description": "Main site",
-  "main": "main.js",
-  "author": "Artur <klyuvitkinartur@gmail.com>",
-  "license": "ISC",
+  "name": "vite-project",
+  "version": "0.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "path": "^0.12.7",
+    "vite": "^2.7.2"
   }
 }
